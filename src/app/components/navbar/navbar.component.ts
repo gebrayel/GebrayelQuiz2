@@ -14,9 +14,7 @@ export class NavbarComponent implements OnInit {
   }
   onSearch(value: string){
     if (value){
-      this.router.navigate(['/'],{
-        queryParams: {q: value}
-      });
+      this.router.navigate(['/home'],{queryParams: {q: value}});
     }
   }
 }

@@ -6,5 +6,6 @@ export interface Character {
     species: string;
     origin: string;
     created: string;
-    status: string
+    status: string;
+    counter: number;
 }
