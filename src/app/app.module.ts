@@ -7,6 +7,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CharactersDetailsComponent } from './pages/characters-details/characters-details.component';
 import { PreviewPageComponent } from './pages/preview-page/preview-page.component';
+import { AngularFireModule } from '@angular/fire'
+import { AngularFirestoreModule } from '@angular/fire/firestore'
+import { AngularFireStorageModule } from '@angular/fire/storage'
+import { AngularFireAuthModule } from '@angular/fire/auth'
+
+import { environment } from 'src/environments/environment'
 
 @NgModule({
   declarations: [
@@ -18,7 +24,12 @@ import { PreviewPageComponent } from './pages/preview-page/preview-page.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    AngularFireModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
